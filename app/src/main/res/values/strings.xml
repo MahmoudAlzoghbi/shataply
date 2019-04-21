@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">شطبلى Shattably</string>
+
+    <string name="Email_Address">اسم المستخدم او رقم الموبايل</string>
+    <string name="Password">كلمة السر</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="sign_up">انشاء حساب جديد</string>
+    <string name="workerProfile">الصفحه الشخصيه للعامل</string>
+    <string name="confirmPhoneNumber">تاكيد رقم الموبايل </string>
+    <string name="todo">background</string>
+    <string name="client_f_name">name </string>
+    <string name="client_address">address</string>
+    <string name="client_email">phone number</string>
+    <string name="client_password">password</string>
+    <string name="client_con_password">confirm password</string>
+    <string name="client_btn_sign_up">create an account</string>
+
+    <string name="Back_Ground">Back_Ground_Photo</string>
+    <string name="forget_pass">هل نسيت كلمه السر ؟</string>
+    <string name="btn_sign_up">إنشاء حساب جديد الان</string>
+    <string name="تسجيل">تسجيل الدخول</string>
+    <string name="sign_up_hint">اذا لم يكن لديك حساب ؟</string>
+    <string name="Full_Name">الاسم كامل</string>
+    <string name="age">سنه الميلاد</string>
+    <string name="Phone_Number">رقم الموبايل</string>
+    <string name="address">العنوان </string>
+    <string name="Password_sign_up">كلمة السر</string>
+    <string name="Confirm_Password_sign_up">تأكيد كلمة السر</string>
+    <string name="radio_button">موافق على شروط الاستخدام وسياسه الخصوصيه</string>
+    <string name="button_register">انشاء حساب</string>
+    <string name="confirmation_number">رمز التاكيد</string>
+    <string name="worker">Worker(عامل)</string>
+    <string name="client">Customer(عميل)</string>
+    <string name="type_of_job">المهنه او القسم التابع له</string>
+    <string name="confirm_ph_number">ادخل رمز التاكيد</string>
+
+    <string-array name="government">
+        <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Giza</item>
+        <item>Aswan</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Category</item>
+        <item>سباكه</item>
+        <item>كهربائى</item>
+        <item>محاره</item>
+        <item>جبس ابيض</item>
+        <item>سراميك</item>
+        <item>بلاط</item>
+        <item></item>
+
+    </string-array>
+
+    <string-array name="cairo_area">
+        <item>El shrouk</item>
+        <item>Madenti</item>
+        <item>El-Rehab</item>
+        <item>10th-of-Ramadan</item>
+        <item>Badr-City</item>
+        <item>El-Zamalek</item>
+        <item>Heliopolis</item>
+        <item>Nasser-City</item>
+        <item>El-Qobbah</item>
+        <item>El-Maadi</item>
+        <item>El-Mokkatm</item>
+        <item>El-Mohandsen</item>
+        <item>El-Shekh-Zayed</item>
+        <item>El-Dokki</item>
+        <item>Giza-Square</item>
+        <item>El-Haram</item>
+        <item>Faisal</item>
+        <item>Shobra</item>
+        <item>Obour</item>
+        <item>Matareya</item>
+        <item>6th-October</item>
+        <item>Helwan</item>
+        <item>Ain-Shams</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="alex_area">
+        <item>Moharam-Bek</item>
+        <item>Abo-Qeer</item>
+        <item>El-Hadara</item>
+        <item>El-Amreya</item>
+        <item>El-Asafra</item>
+        <item>El-Azareta</item>
+        <item>Bahari</item>
+        <item>Bokla</item>
+        <item>Burg-El-Arab</item>
+        <item>Gleem</item>
+        <item>Kafr-Abdo</item>
+        <item>El-Mandara</item>
+        <item>Miami</item>
+        <item>San-Stefano</item>
+        <item>Sidi-Beshr</item>
+        <item>Sidi-Gaber</item>
+        <item>El-Shatbi</item>
+        <item>Victoria</item>
+        <item>Smouha</item>
+        <item>Stanly</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="el_mansoura_area">
+        <item>El-Salam</item>
+        <item>Sandob</item>
+        <item>Torreil</item>
+        <item>El-Mokhtlat</item>
+        <item>Gdaila</item>
+        <item>El-Galaa</item>
+        <item>Hay El-Gamaa</item>
+        <item>El-Mashaya</item>
+        <item>El-Seka El-Gededa</item>
+        <item>Suez Qanal</item>
+        <item>Port-Saied-Street</item>
+    </string-array>
+    <string name="title_activity_wowker_profile">WowkerProfileActivity</string>
+
+</resources>

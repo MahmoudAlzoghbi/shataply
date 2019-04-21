@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientSignUpActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        >
+
+        <EditText
+            android:id="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/client_f_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@color/gray"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/c_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/client_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@color/gray"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/c_address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/client_address"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@color/gray"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/c_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/client_password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@color/gray"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/c_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/client_con_password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/c_btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/client_btn_sign_up"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:onClick="onClickButtonCustomerSignUp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</ScrollView>
