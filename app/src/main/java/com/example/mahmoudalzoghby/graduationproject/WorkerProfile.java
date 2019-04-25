@@ -53,12 +53,13 @@ public class WorkerProfile extends AppCompatActivity {
         call.enqueue(new Callback<HelloWorld>() {
             @Override
             public void onResponse(Call<HelloWorld> call, Response<HelloWorld> response) {
-                Toast.makeText(WorkerProfile.this , "Alzoghbi"+response.body().toString() , Toast.LENGTH_LONG).show();
+                HelloWorld he = response.body();
+                Toast.makeText(WorkerProfile.this , he.getMessage(), Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onFailure(Call<HelloWorld> call, Throwable t) {
-                Toast.makeText(WorkerProfile.this , t.getMessage() , Toast.LENGTH_LONG).show();
+                Log.i("Failed" , t.getMessage());
             }
         });
 

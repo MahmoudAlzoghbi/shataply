@@ -142,7 +142,8 @@
             android:text="Search for Worker(s)"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:onClick="onClickBtnSearch"/>
 
 
     </LinearLayout>

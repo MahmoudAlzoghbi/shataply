@@ -2,6 +2,8 @@ package com.example.mahmoudalzoghby.graduationproject.User;
 
 import android.arch.persistence.room.RawQuery;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
@@ -33,6 +35,16 @@ public interface ApiServices {
 
     @GET("/")
     Call<HelloWorld> Hello();
+
+    @GET("/api/showDepartments")
+    Call<Department> getDepartment();
+
+    @POST("/api/showSpecificWorkers")
+    @FormUrlEncoded
+    Call<Workers> getAllWorkersRelatedToSpecificTask(
+                    @Field("city") String city,
+                    @Field("dept_id") int id
+    );
 
 
 }
