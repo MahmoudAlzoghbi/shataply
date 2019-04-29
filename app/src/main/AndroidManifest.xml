@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WorkersActivity">
+        <activity android:name=".ClintSelection2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
@@ -32,7 +32,7 @@
         <activity android:name=".ConfirmPhNumberActivity" />
         <activity android:name=".ClientProfile" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".ClintSelection2Activity"></activity>
+        <activity android:name=".WorkersActivity"></activity>
     </application>
 
 </manifest>

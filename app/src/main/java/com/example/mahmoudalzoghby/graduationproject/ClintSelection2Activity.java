@@ -1,5 +1,6 @@
 package com.example.mahmoudalzoghby.graduationproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -36,7 +37,7 @@ public class ClintSelection2Activity extends AppCompatActivity {
 
     Button search;
 
-    boolean isClicked = false;
+    public boolean isClicked = false;
 
     ApiServices apiServices;
 
@@ -63,7 +64,7 @@ public class ClintSelection2Activity extends AppCompatActivity {
                     deptId.add(datumList.get(i).getId());
 
                 }
-                Log.i("dept" , depertment.get(0));
+                //Log.i("dept" , depertment.get(0));
 
                 //Log.i("Success" , response.body().getMessage());
             }
@@ -131,7 +132,7 @@ public class ClintSelection2Activity extends AppCompatActivity {
         ListOfArea.setVisibility(View.VISIBLE);
         ListOfCategory.setVisibility(View.VISIBLE);
 
-        gove = "Alexandria";
+        gove = "alexandria";
         isClicked = true;
     }
 
@@ -160,7 +161,7 @@ public class ClintSelection2Activity extends AppCompatActivity {
 
         ListOfArea.setVisibility(View.VISIBLE);
         ListOfCategory.setVisibility(View.VISIBLE);
-        gove = "Cairo";
+        gove = "cairo";
         isClicked = true;
     }
 
@@ -174,18 +175,30 @@ public class ClintSelection2Activity extends AppCompatActivity {
     public void onClickBtnSearch(View view) {
         ListOfArea = (Spinner)findViewById(R.id.ListOfArea);
         ListOfCategory = (Spinner)findViewById(R.id.ListOfCategory);
+        Log.i("isCklicked" , String.valueOf(isClicked));
         if (isClicked == false){
-            Toast.makeText(this , "Please Click in Button Government" , Toast.LENGTH_LONG);
+            Toast.makeText(this , "Please Click in Button Government" , Toast.LENGTH_LONG).show();
         }else {
+            Intent intent = new Intent(this , WorkersActivity.class);
+
+            Bundle bundle = new Bundle();
+
             String ar = ListOfArea.getSelectedItem().toString();
             String ca = ListOfCategory.getSelectedItem().toString();
 
             int index = depertment.indexOf(ca);
             int depID = deptId.get(index);
 
-            Log.i("id" , String.valueOf(depID));
-            Log.i("Category" , ca);
-            Log.i("Area" , ar);
+            bundle.putString("DepartmentId" , String.valueOf(depID));
+            bundle.putString("Area" , gove);
+
+            intent.putExtras(bundle);
+
+            startActivity(intent);
+
+            //Log.i("id" , String.valueOf(depID));
+            //Log.i("Category" , ca);
+            //Log.i("Area" , ar);
         }
 
     }
