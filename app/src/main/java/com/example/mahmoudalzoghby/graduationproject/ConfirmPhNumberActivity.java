@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 public class ConfirmPhNumberActivity extends Activity {
 
+    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS =0 ;
+
     Button button;
 
     @Override
@@ -27,12 +29,12 @@ public class ConfirmPhNumberActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-               // sendSMSMessage();
+               sendSMSMessage();
             }
         });
     }
 
-    /*protected void sendSMSMessage() {
+    protected void sendSMSMessage() {
 
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.SEND_SMS)
@@ -65,5 +67,5 @@ public class ConfirmPhNumberActivity extends Activity {
             }
         }
 
-    }*/
+    }
 }

@@ -2,6 +2,8 @@ package com.example.mahmoudalzoghby.graduationproject;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -9,6 +11,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.mahmoudalzoghby.graduationproject.User.ApiServices;
@@ -34,11 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this, R.style.Theme_AppCompat_DayNight);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Starting...");
-        progressDialog.getWindow().setGravity(Gravity.CENTER);
-        progressDialog.show();
+        final ProgressDialog progressDialog = ProgressDialog.show(this,null , null,false , true);
+        progressDialog.setContentView(R.layout.progress_layout);
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
@@ -46,7 +46,20 @@ public class LoginActivity extends AppCompatActivity {
                     public void run() {
                         progressDialog.dismiss();
                     }
-                },3000);
+                },5000);
+
+        GradientDrawable gd = new GradientDrawable();
+        gd.setColor(Color.parseColor("#FFFFFF"));
+        gd.setStroke(4 , Color.GRAY);
+
+        apiServices = RetrofitClient.getClient().create(ApiServices.class);
+
+        email = (EditText) findViewById(R.id.log_in_email_address);
+        pass = (EditText) findViewById(R.id.log_in_password);
+
+        email.setBackground(gd);
+        pass.setBackground(gd);
+
     }
 
 

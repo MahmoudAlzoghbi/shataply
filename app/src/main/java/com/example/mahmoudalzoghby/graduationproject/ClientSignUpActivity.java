@@ -84,13 +84,18 @@ public class ClientSignUpActivity extends AppCompatActivity {
         apiServices.saveUser(name , email , pass , role , address).enqueue(new Callback<UserModel>() {
             @Override
             public void onResponse(Call<UserModel> call, Response<UserModel> response) {
-                if (!(response.body().getUser() == null)){
-                    checkUserFoundOrNot(response.body().toString());
-                    Log.i("Success" , "User Saved Successfully");
+                //if (!(response.body().getToken() == null)){
+                    //checkUserFoundOrNot(response.body().toString());
+                    //Log.i("Success" , response.body().getToken());
+                //}
+                //else {
+                    //Toast.makeText(ClientSignUpActivity.this , "هذا المستخدم موجود بالفعل" , Toast.LENGTH_LONG).show();
+                //}
+                if(response.isSuccessful()){
+                    Log.i("Success" , "Ana Hena" + response.body().getToken());
+
                 }
-                else {
-                    Toast.makeText(ClientSignUpActivity.this , "هذا المستخدم موجود بالفعل" , Toast.LENGTH_LONG).show();
-                }
+
             }
 
             @Override

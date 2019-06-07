@@ -36,10 +36,6 @@ public class WorkerSignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worker_sign_up);
 
-        /*SmsManager smsManager = SmsManager.getDefault();
-
-        smsManager.sendTextMessage("01026945658" , null , "123" , null , null);*/
-
         name = (EditText)findViewById(R.id.w_f_name);
         phNum = (EditText)findViewById(R.id.w_phone_number);
         address = (EditText)findViewById(R.id.w_address);
@@ -127,14 +123,17 @@ public class WorkerSignUpActivity extends AppCompatActivity {
         apiServices.saveUser(name , email , pass , role ,address  ).enqueue(new Callback<UserModel>() {
             @Override
             public void onResponse(Call<UserModel> call, Response<UserModel> response) {
+                //Log.i("ana" , "hena" + response.body().getToken());
+                Log.i("message" , String.valueOf(response.code()));
                 if (response.isSuccessful()){
-                    if (!(response.body().getUser() == null)){
-                        checkUserFoundOrNot(response.body().toString());
+                    Log.i("Ana" , "Hena");
+                    //if (!(response.body().getUser() == null)){
+                        //checkUserFoundOrNot(response.body().toString());
                         Log.i("Success" , "User Saved Successfully");
-                    }
-                    else {
-                        Toast.makeText(WorkerSignUpActivity.this , "هذا المستخدم موجود بالفعل" , Toast.LENGTH_LONG).show();
-                    }
+                    //}
+                    //else {
+                        //Toast.makeText(WorkerSignUpActivity.this , "هذا المستخدم موجود بالفعل" , Toast.LENGTH_LONG).show();
+                    //}
                 }
             }
 

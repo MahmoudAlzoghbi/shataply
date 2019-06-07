@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClintSelection2Activity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
@@ -25,14 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetermineUserActivity" />
+        <activity android:name=".ClintSelection2Activity" />
         <activity android:name=".WorkerSignUpActivity" />
         <activity android:name=".WorkerProfile" />
         <activity android:name=".ClientSignUpActivity" />
         <activity android:name=".ConfirmPhNumberActivity" />
         <activity android:name=".ClientProfile" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".WorkersActivity"></activity>
+        <activity android:name=".ClientSeeWorkerProfileActivity" />
+        <activity android:name=".WorkersActivity" />
+        <activity android:name=".DetermineUserActivity"></activity>
     </application>
 
 </manifest>

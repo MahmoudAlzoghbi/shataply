@@ -30,21 +30,36 @@
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:text="Available"
-            android:layout_marginTop="-45dp"
+            android:layout_marginTop="-55dp"
             android:layout_gravity="right"
-            android:paddingRight="10dp"
+            android:paddingRight="40dp"
             />
 
         <TextView
             android:id="@+id/editText2"
-            android:layout_width="match_parent"
+            android:layout_width="110dp"
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:background="@color/gray"/>
+            android:layout_marginLeft="35dp"
+            android:background="@color/gray"
+            android:hint=" Total Rate "
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="-30dp"
+            android:stepSize=".5"
+            android:isIndicator="true"
+            />
 
         <TextView
             android:id="@+id/editText3"
@@ -75,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 >
                 <ImageView
                     android:id="@+id/image1"
